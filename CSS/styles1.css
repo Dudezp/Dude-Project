@@ -1,6 +1,6 @@
 /*Сетка*/
 body{
-    background-color:#ccc;
+    background-color: #ccc;
 }
 #wrapper{
     width: 1100px;
@@ -16,9 +16,9 @@ body{
     width: 100%;
 }
 #content{
-    width:80%;
-    margin: 0 10%;  
+    width: 80%;
     height: auto;
+    margin: 0 10px;
 }
 #nav{
     width: 200px;
@@ -29,74 +29,72 @@ body{
 }
 #nav ul{
     height: 515px;
+    
 }
 #map{
-   margin-top: 20px;
+    margin-top: 20px;
     width: 200px;
     height: 225px;
-   /* margin-top: 20px;*/
 }
 #map img{
     width: 100%;
     height: 100%;
 }
 #main{
-
+    float: right;
     width: calc(100% - 200px);
-    float: right
 }
 #footer{
-    clear: both;
     width: 80%;
     margin: 0 10%;
     height: 37px;
     padding-top: 20px;
-   /* padding-right: 20px;*/
+    clear: both;
 }
-
 /*Фон*/
-#nav ul,#footer,#main_title,.small_card, .big_card{
+#nav ul,#footer, #main_title, .small_card, big_card{
     background-color: white;
 }
 /*Навигация*/
-
 ul{
-    padding: 0;
-    margin: 0;
+    padding: 0; margin: 0;
 }
 ul li{
-    list-style: none
-}
-ul li:hover:nth-child(n+2){background-color: rgba(0,0,0,0.1)}
-ul li:nth-child(1){
-    padding: 0;
-    margin: 0;
+    list-style: none;
 }
 ul li:nth-child(n+2)
 {
     padding: 20px;
 }
+ul li:hover:nth-child(n+2)
+{
+    background-color: rgba(0,0,0,0.1);
+}
+ul li:nth-child(1){
+    padding: 0;
+    margin: 0;
+}
 ul img{width: 100%;}
 /*Ссылки*/
-a,a:visited{
+a, a:visited
+{
     color: black;
     text-decoration: none;
 }
-table a
-{
+table a{
     padding-left: 27px;
     width: auto;
-    background-image: url("/images/Button.jpg");
+    background-image: url(/images/Button.jpg);
     background-repeat: no-repeat;
     background-position: 5px;
     background-size: 17px 17px;
 }
 /*Текст*/
 *{
-    font-family: 'Trebuchet MS', Helvetica, sans-serif;;
+    font-family: 'Trebushet MS', Helvetica, sans-serif;
 }
 h1{padding-left: 20px;}
-h2 {margin-top:0;}
+h2{margin-top: 0;}
 small{
     color: #227dab;
     font-weight: bold;
@@ -104,24 +102,23 @@ small{
 }
 #footer{
     font-size: 18px;
-
     font-weight: bold;
     text-align: center;
 }
 p{
     height: 100px;
     overflow: hidden;
-    text-overflow:clip;
+    text-overflow: clip;
 }
-/*Таблица*/
+/*Таблицы*/
 table{
-    border-collapse: inherit;
     border-spacing: 20px;
+    border-collapse: inherit;
     padding-top: 0;
     margin-top: 0;
     border: 0;
 }
-td,th{
+td, th{
     border: none;
 }
 .small_card{
@@ -129,29 +126,29 @@ td,th{
     border-bottom: 5px solid #227dab;
     padding: 0;
     margin: 0;
-   /* width: calc(100% / 3);Проверка*/
 }
-.small_card img{
+.small_card, .content{
+    padding: 20px;
+}
+.smoll_card img{
     width: 205px;
     height: 160px;
 }
-.small_card .content
-{
-    padding: 20px;
+.big_card{
+    background-color: white;
 }
 /*Формы*/
 .big_card{
     padding: 0;
     margin: 0;
 }
-.big_card img
-{
-    width:300px;
-    float:left;
+.big_card img{
+    width: 300px;
+    float: left;
 }
 form{
-    width:calc(100% - 300px);
-    float:right;
+    width: calc(100% - 300px);
+    float: right;
 }
 fieldset{
     border: none;
@@ -169,32 +166,28 @@ input,select{
     height: 30px;
     margin-bottom: 10px;
     width: calc(100% - 20px);
-   /* min-width: 300px;
-    max-width: 300px;*/
 }
 select{
     width: 100%;
 }
-
 input[type=submit]{
     border: none;
     color: white;
-    padding-left: 27px;
     background-color: #227dab;
+    padding-left: 27px;
     margin: 0;
-    width: auto;
-    background-image: url("/images/Button-2.jpg");
+    background-image: url(/images/Button-2.jpg);
     background-repeat: no-repeat;
     background-position: 5px;
     background-size: 17px 17px;
+    width: auto;
 }
-/*Страницы*/
-.big_pic img,.small_pic img{
+/*Доп страницы*/
+.big_pic img, .small_pic img{
     width: 100%;
 }
 .form_block{
-    float:left;
-    margin-bottom:20px;
-    width:100%;
+    float: left;
+    margin-bottom: 20px;
+    width: 100%;
 }
-

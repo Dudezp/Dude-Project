@@ -21,40 +21,46 @@
                 <div id="main">
                     <table>
                         <tr>
-                            <th id="main_title" colspan="3">Главная</th>
+                            <td id="main_title" colspan="3"><h1>Главная</h1></td>
                         </tr>
                         <tr>
                             <td class="small_card">
                                 <img src="images/Ghibli.jpg" alt="Ghibli"/>
+                                <div class="content">
                                 <small>Бизнес класс</small>
                                 <h2>Ghibli</h2>
                                 <p>Maserati Ghibli III - Седан бизнес-класса итальянской компании Maserati который поступил в продажу во второй половине 2013</p>
                                 <a title="Ghibli" href="Ghibli.html">Перейти</a>
+                                </div>
                             </td>
                             <td class="small_card">
                                 <img src="images/Quatro.jpg" alt="Quattroporte"/>
+                                <div class="content">
                                 <small>Представительский класс</small>
                                 <h2>Quattroporte</h2>
                                 <p>Maserati Quattroporte - Спортивній полноразмерный седан класса люкс, который изготавливается итальянской компание Maserati с 1963</p>
                                 <a title="Quattroporte" href="Quattroporte.html">Перейти</a>
+                                </div>
                             </td>
                             <td class="small_card">
                                 <img src="images/Grand.jpg" alt="GrandTurismo"/>
+                                <div class="content">
                                 <small>Kyne</small>
                                 <h2>GrandTurismo</h2>
                                 <p>Maserati GrandTurismo - Автомобиль класс Грант Туризмо от итальянской компании Maserati. Общественности был представлен в 2007 году на Женевском автосалоге.</p>
                                 <a title="GrandTurismo" href="GrandTurismo.html">Перейти</a>
+                                </div>
                             </td>
                         </tr>
                         <tr>
                             <td class="big_card" colspan="3">
                                 <img src="images/Form.png" alt="Форма"/>
-                                <form action="Home/Order" method="Post">
+                                <form onsubmit="return false" action="Home/Lid" method="POST">
                                     <fieldset>
                                         <legend>Оформление заказа</legend>
                                         <input type="text" name="Name" placeholder="Введите ваше имя" required/><br/>
                                         <input type="tel" name="Tel" placeholder="+38-(XXX)-XXX-XX-XX" required pattern="8-[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}"/><br/>
-                                        <select name="Car">
+                                        <select name="Car" required>
                                             <option value="Ghibli">Ghibli</option>
                                             <option value="Quattroporte">Quattroporte</option>
                                             <option value="GrandTurismo">GrandTurismo</option>
@@ -67,7 +73,7 @@
                     </table>
                 </div>
             </div>
-            <div id="footer"><h2>Copirate</h2></div>
+            <div id="footer">Copirate</div>
         </div>
     </body>
 </html>
